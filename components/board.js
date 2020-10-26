@@ -4,7 +4,7 @@ import Square from "./squre";
 
 const Board = ({ squares, onClick }) => {
   const renderSquare = (i) => {
-    <Square value={squares[i]} onClick={onClick(i)} />;
+    return <Square key={i} value={squares[i]} onClick={() => onClick(i)} />;
   };
 
   return (
@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     justifyContent: "center",
-    flexDirection: "column",
   },
   Btn: {
     width: 100,
