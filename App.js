@@ -69,8 +69,4 @@ const styles = StyleSheet.create({
     fontSize: 30,
     paddingBottom: 20,
   },
-  resetBtn: {
-    paddingTop: 10,
-    margin: 10,
-  },
 });
